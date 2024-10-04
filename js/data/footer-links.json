@@ -24,9 +24,9 @@
       }
     ],
     "socials": [
-      { "icon": "/assets/icons/social-01.svg", "url": "#" },
-      { "icon": "/assets/icons/social-02.svg", "url": "#" },
-      { "icon": "/assets/icons/social-03.svg", "url": "#" }
+      { "icon": "assets/icons/social-01.svg", "url": "#" },
+      { "icon": "assets/icons/social-02.svg", "url": "#" },
+      { "icon": "assets/icons/social-03.svg", "url": "#" }
     ]
   }
   
