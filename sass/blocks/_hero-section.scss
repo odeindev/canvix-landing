@@ -6,7 +6,7 @@
   height: 1041px;
   background: {
     color: $black;
-    image: url("../../assets/images/header-bg.png");
+    image: url("/canvix-landing/assets/images/header-bg.png");
     repeat: no-repeat;
     size: cover;
     position: center center;
@@ -142,10 +142,12 @@
     height: 100%;
     border-radius: 50%;
     padding: 2px;
-    background: linear-gradient(22deg, #FFFFFF 11%, #000000 50%, #99EDE5 94%);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out;
+    background: linear-gradient(22deg, #ffffff 11%, #000000 50%, #99ede5 94%);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: exclude;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
   }
 
   &::after {
@@ -170,13 +172,19 @@
 
 @mixin respond-to($breakpoint) {
   @if $breakpoint == "desktop" {
-    @media (max-width: 1280px) { @content; }
+    @media (max-width: 1280px) {
+      @content;
+    }
   }
   @if $breakpoint == "tablet" {
-    @media (max-width: 768px) { @content; }
+    @media (max-width: 768px) {
+      @content;
+    }
   }
   @if $breakpoint == "mobile" {
-    @media (max-width: 542px) { @content; }
+    @media (max-width: 542px) {
+      @content;
+    }
   }
 }
 
@@ -198,11 +206,11 @@
     padding-top: 90px;
     padding-left: 20px;
   }
-  
+
   .hero__partners {
     padding: 40px 0;
   }
-  
+
   .hero__partner-brands {
     gap: 10px;
   }

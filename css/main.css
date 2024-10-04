@@ -302,7 +302,7 @@ html {
   width: 100vw;
   height: 1041px;
   background-color: #0c0c0c;
-  background-image: url("../../assets/images/header-bg.png");
+  background-image: url("/canvix-landing/assets/images/header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -421,10 +421,13 @@ html {
   height: 100%;
   border-radius: 50%;
   padding: 2px;
-  background: linear-gradient(22deg, #FFFFFF 11%, #000000 50%, #99EDE5 94%);
+  background: linear-gradient(22deg, #ffffff 11%, #000000 50%, #99ede5 94%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
 }
 .circle-wrapper::after {
   content: "";
