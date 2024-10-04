@@ -1,0 +1,118 @@
+/* About Section */
+.about {
+  background-color: $black;
+  width: 100vw;
+
+  &__content {
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    padding: 100px 40px;
+  }
+
+  &__article {
+    padding: 60px 0;
+  }
+
+  &__title {
+    font-family: $secondary-font;
+    font-size: 30px;
+    font-weight: 600;
+    color: $light-green;
+    padding-bottom: 25px;
+  }
+
+  &__subtitle {
+    font-family: $secondary-font;
+    font-size: 64px;
+    font-weight: 600;
+    color: $white;
+    padding-bottom: 25px;
+  }
+
+  &__description {
+    font-family: $primary-font;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.44px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $light-grey;
+    padding-bottom: 25px;
+  }
+
+  &__counters {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 32px;
+  }
+
+  &__counter {
+    &-value {
+      font-family: $secondary-font;
+      font-size: 45px;
+      font-weight: 600;
+      line-height: 52.7px;
+      text-align: left;
+      color: $light-green;
+      margin: 0;
+    }
+
+    &-label {
+      font-family: $primary-font;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20.83px;
+      letter-spacing: 0.03em;
+      text-align: left;
+      color: $light-grey;
+      padding-top: 10px;
+    }
+  }
+
+  &__trial-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 248px;
+    height: 48px;
+    border-radius: 23px;
+    background-color: $white;
+    transition: 0.3s;
+
+    &-text {
+      font-family: $primary-font;
+      font-size: 20px;
+      font-weight: 400;
+      color: $light-black;
+    }
+
+    &:hover {
+      opacity: 0.9;
+      border: 2px solid $light-green;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    &:focus {
+      outline: 2px solid $light-green;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .about {
+    &__image {
+      display: none;
+    }
+
+    &__article {
+      padding-top: 90px;
+      padding-left: 20px;
+    }
+  }
+}

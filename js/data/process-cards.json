@@ -1,0 +1,26 @@
+[
+    {
+        "arrow_url": "/assets/icons/process-arrow.svg",
+        "icon_url": "/assets/icons/process-icon-01.svg",
+        "title": "Ideate",
+        "description": "The ideation process is a crucial phase in the design process where creative thinking and brainstorming."
+    },
+    {
+        "arrow_url": "/assets/icons/process-arrow.svg",
+        "icon_url": "/assets/icons/process-icon-02.svg",
+        "title": "Research",
+        "description": "Research is a critical component of the design process, helping designers understand the problem."
+    },
+    {
+        "arrow_url": "/assets/icons/process-arrow.svg",
+        "icon_url": "/assets/icons/process-icon-03.svg",
+        "title": "Create",
+        "description": "Designing a process involves several key steps to ensure clarity, efficiency, and successful implementation."
+    },
+    {
+        "arrow_url": "/assets/icons/process-arrow.svg",
+        "icon_url": "/assets/icons/process-icon-04.svg",
+        "title": "Testing",
+        "description": "Testing is a crucial phase in the design process to ensure the product or system meets requirements."
+    }
+]

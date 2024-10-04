@@ -1,0 +1,359 @@
+/* Process Section */
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin section-title {
+  font-family: $secondary-font;
+  font-weight: 600;
+  text-align: center;
+}
+
+.process {
+  &__content {
+    padding-top: 107px;
+  }
+
+  &__title {
+    @include section-title;
+    font-size: 30px;
+    color: $light-green;
+    padding-bottom: 12px;
+  }
+
+  &__subtitle {
+    @include section-title;
+    font-size: 64px;
+    color: $black;
+  }
+
+  &__cards-block {
+    padding: 93px 0;
+    @include flex-center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    .demo-card {
+      flex: 1;
+      min-width: 250px;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    right: 325px;
+    top: 20px;
+    z-index: 1;
+    margin-right: -330px;
+  }
+
+  &__fragment {
+    padding: 0 0 0 70px;
+
+    &-title {
+      @include section-title;
+      font-size: 30px;
+      color: $light-black;
+    }
+
+    &-text {
+      padding-right: 90px;
+      font-family: $primary-font;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 0.03em;
+      color: $light-black;
+    }
+  }
+}
+
+.fragment__id {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: -5px 0 4px 6px;
+}
+
+.process__icon {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.recent-showcase {
+  &__content {
+    margin-top: 67px;
+  }
+
+  &__header {
+    @include section-title;
+    font-size: 64px;
+    color: $black;
+  }
+
+  &__images {
+    @include flex-center;
+    padding: 85px 45px;
+
+    img {
+      transition: 0.3s;
+      
+      &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  &__left-block {
+    padding-bottom: 100px;
+    padding-right: 20px;
+  }
+
+  &__right-block {
+    padding-top: 100px;
+    padding-left: 20px;
+  }
+
+  &__block {
+    padding: 10px 0;
+    gap: 20px;
+  }
+
+  &__title {
+    font-family: $secondary-font;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: $black;
+  }
+
+  &__text {
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: $light-black;
+  }
+}
+
+.features {
+  margin: 111px 0;
+
+  &__content {
+    padding: 45px;
+    background: $dark-grey;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  &__quote {
+    @include section-title;
+    font-weight: 700;
+    font-size: 25px;
+    color: $black;
+  }
+
+  &__name {
+    @include section-title;
+    font-size: 20px;
+    color: $black;
+  }
+
+  &__role {
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $light-black;
+  }
+
+  &__switch {
+    display: flex;
+    gap: 11px;
+
+    > img {
+      width: 44px;
+      height: 44px;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media (max-width: 1260px) {
+  .process {
+    &__cards-block {
+      display: grid;
+      justify-items: center;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .demo-card {
+      border-radius: 20px;
+      background: $light-grey;
+      padding: 10px;
+      margin: 0;
+    }
+
+    &__arrow {
+      display: none;
+      margin-right: 0;
+      margin-top: 0;
+      position: relative;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .process {
+    &__content {
+      padding-top: 60px;
+    }
+
+    &__title,
+    &__subtitle {
+      font-size: 1.75rem;
+    }
+
+    &__subtitle {
+      font-size: 2.5rem;
+    }
+
+    &__fragment-title {
+      font-size: 1.5rem;
+    }
+  }
+
+  .recent-showcase {
+    &__left-block,
+    &__right-block {
+      padding: 0;
+      gap: 20px;
+    }
+
+    &__header {
+      font-size: 2.5rem;
+    }
+
+    &__images {
+      gap: 0;
+      flex-direction: column;
+      padding: 40px 10px;
+    }
+  }
+
+  .features {
+    &__content {
+      padding: 30px;
+      gap: 25px;
+    }
+
+    &__quote {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+    .demo-card {
+      padding: 30px;
+    }
+  
+    .process {
+      &__content {
+        padding-top: 40px;
+      }
+  
+      &__title,
+      &__subtitle {
+        font-size: 1.5rem;
+      }
+  
+      &__subtitle {
+        font-size: 2rem;
+      }
+  
+      &__fragment {
+        padding: 0 0 0 20px;
+  
+        &-text {
+          padding-right: 0;
+        }
+      }
+    }
+  
+    .recent-showcase {
+      &__header {
+        font-size: 2rem;
+      }
+  
+      &__content {
+        margin-top: 27px;
+      }
+  
+      &__title {
+        font-size: 1.5rem;
+      }
+    }
+  
+    .features {
+      margin: {
+        top: 41px;
+        bottom: 41px;
+      }
+  
+      &__content {
+        padding: 20px;
+        gap: 20px;
+      }
+  
+      &__quote {
+        font-size: 18px;
+      }
+    }
+  }
+  
+  @media (max-width: 624px) {
+    .process {
+      &__cards-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 40px 0;
+        margin:  0 10px;
+      }
+
+      &__fragment {
+        padding: 40px 40px;
+      }
+    }
+  
+    .demo-card {
+      flex: 1;
+      min-width: 375px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin: 0 10px;
+    }
+  }

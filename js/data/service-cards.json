@@ -1,0 +1,32 @@
+[
+    {
+        "image_url": "/assets/icons/service-icon-01.svg",
+        "title": "Content Marketing",
+        "description": "Our team creates engaging and shareable content that resonates with your audience, drives organic traffic."
+    },
+    {
+        "image_url": "/assets/icons/service-icon-02.svg",
+        "title": "Graphic Design",
+        "description": "Unlock the power of visual storytelling with our expert graphic design services tailored to elevate your brand and captivate."
+    },
+    {
+        "image_url": "/assets/icons/service-icon-03.svg",
+        "title": "Digital Marketing",
+        "description": "Elevate your brand's online presence with our data-driven digital marketing strategies. From SEO and content marketing."
+    },
+    {
+        "image_url": "/assets/icons/service-icon-04.svg",
+        "title": "Web Design",
+        "description": "We specialize in creating visually stunning, user-friendly websites that align with your brand identity and deliver an exceptional."
+    },
+    {
+        "image_url": "/assets/icons/service-icon-05.svg",
+        "title": "IT Consulting",
+        "description": "IT consulting, or information technology consulting, refers to the practice of providing advisory and implementation services."
+    },
+    {
+        "image_url": "/assets/icons/service-icon-06.svg",
+        "title": "Brand Identity",
+        "description": "It involves creating a unique and recognizable identity that sets the brand apart from competitors and resonates with the target audience."
+    }
+]

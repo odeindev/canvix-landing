@@ -1,0 +1,51 @@
+$light-green: #64ccc5;
+$black: #0c0c0c;
+$light-black: #121212;
+$white: #fbfbfb;
+$light-grey: #f4f4f4;
+$dark-grey: #dfdfdf;
+$primary-font: "DM Sans", sans-serif;
+$secondary-font: "Roboto Serif", sans-serif;
+
+body,
+html {
+  font-family: "DM Sans", sans-serif;
+}
+
+.wrapper {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+.logo-text {
+  font-family: var(--second-family);
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
